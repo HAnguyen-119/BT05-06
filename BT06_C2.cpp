@@ -11,17 +11,17 @@ void print(int arr[], int n){
 }
 void hoanVi(int count){
 	for (int i = 97; i <= 96 + n; i++){
-        if (check[i] == 0){
-            arr[count] = i;
-            if (count == k){
-                print(arr, k);
-            }
-            else {
-                check[i] = 1;
-                hoanVi(count + 1);
-                check[i] = 0;
-            }
-        }
+		if (check[i] == 0){
+		    arr[count] = i;
+		    if (count == k){
+			print(arr, k);
+		    }
+		    else {
+			check[i] = 1;
+			hoanVi(count + 1);
+			check[i] = 0;
+		    }
+		}
 	}
 }
 int main(){
