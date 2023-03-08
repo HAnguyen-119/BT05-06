@@ -10,9 +10,9 @@ void print(int arr[], int n){
 }
 void toHop(int count){
 	for (int i = arr[count - 1] + 1; i <= 96 + n - (k - count); i++){
-        arr[count] = i;
+        	arr[count] = i;
 		if (count == k){
-            print(arr, k);
+            		print(arr, k);
 		}
 		else {
 			toHop(count + 1);
