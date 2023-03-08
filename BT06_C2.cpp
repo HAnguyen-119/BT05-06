@@ -9,7 +9,7 @@ void print(int arr[], int n){
 	}
 	cout << endl;
 }
-void toHop(int count){
+void hoanVi(int count){
 	for (int i = 97; i <= 96 + n; i++){
         if (check[i] == 0){
             arr[count] = i;
@@ -18,7 +18,7 @@ void toHop(int count){
             }
             else {
                 check[i] = 1;
-                toHop(count + 1);
+                hoanVi(count + 1);
                 check[i] = 0;
             }
         }
@@ -27,6 +27,6 @@ void toHop(int count){
 int main(){
 
 	cin >> n >> k;
-	toHop(1);
+	hoanVi(1);
 }
 
